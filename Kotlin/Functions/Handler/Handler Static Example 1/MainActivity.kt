@@ -55,8 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        if (customHandler != null) {
-            customHandler!!.onDestroyHandler()
+        if (customHandler != null) {         
             customHandler = null
         }
     }
@@ -65,11 +64,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("HandlerLeak")
     private inner class CustomHandler(activity: MainActivity ): android.os.Handler() {
 
-        private var activity: java.lang.ref.WeakReference<MainActivity>? = null
-
-        init {
-            this.activity = java.lang.ref.WeakReference<MainActivity>(activity)
-        }
+      private var activity: java.lang.ref.WeakReference<MainActivity> = java.lang.ref.WeakReference<MainActivity>(activity)
 
         override fun handleMessage(msg: Message) {
             val any: Any = this.activity!!.get()!!
