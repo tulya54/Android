@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun isInternetStatus(context: Context): Boolean {
         var result = false
         val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
@@ -52,5 +51,4 @@ class MainActivity : AppCompatActivity() {
         }
         return result
     }
-
 }
