@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         onDisplayMetrics()
     }
 
-
    private fun onDisplayMetrics() {
        val displayMetrics: DisplayMetrics = resources.displayMetrics
        val windowManager: WindowManager = getSystemService(Context.WINDOW_SERVICE) as WindowManager
@@ -27,7 +26,5 @@ class MainActivity : AppCompatActivity() {
        val scaledDensity = displayMetrics.scaledDensity
        val xdpi = displayMetrics.xdpi
        val ydpi = displayMetrics.ydpi
-
    }
-
 }
