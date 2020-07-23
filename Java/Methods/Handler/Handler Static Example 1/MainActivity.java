@@ -49,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
         });
         t.start();
     }
+    
+      @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (customHandler != null) {
+            customHandler = null;
+        }
+    }
 
     /*  Inner Static Class  */
     private static class CustomHandler extends android.os.Handler {
