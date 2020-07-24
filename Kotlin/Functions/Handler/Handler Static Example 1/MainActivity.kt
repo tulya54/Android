@@ -74,12 +74,6 @@ class MainActivity : AppCompatActivity() {
             }
             Log.e(TAG, "Increment " + msg.what)
             activity.tvText.text = "Increment " + msg.what
-        }
-
-        fun onDestroyHandler() {
-            if (activity != null) {
-                activity = null
-            }
-        }
+        }   
     }
 }
