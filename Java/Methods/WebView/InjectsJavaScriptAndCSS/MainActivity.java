@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         /*  Init views  */
         initViews();
         /*  Init webView methods  */
+        initWebView();
     }
 
     private void initViews() {
