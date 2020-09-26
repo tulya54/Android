@@ -10,6 +10,15 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     
+    
+    
+    /*  Square librarys  */
+    
+    
+    /*  ReactiveX librarys  */
+    
+
+    
     /*  Dagger2  */
     implementation "com.google.dagger:dagger:2.20"
     implementation "com.google.dagger:dagger-android-support:2.20"
