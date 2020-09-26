@@ -18,7 +18,6 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:2.20"
     
     /*  Room  */
-    def roomVer = "1.1.1"
     implementation "android.arch.persistence.room:runtime:1.1.1"
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     /*  Room with RxJava2  */
