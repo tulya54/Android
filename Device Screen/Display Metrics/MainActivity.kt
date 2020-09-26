@@ -1,4 +1,4 @@
-package kz.snation.myapplication
+package com.example.myapplication
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
