@@ -1,0 +1,20 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <!--  Internet  -->
+    <!--  Permission for use internet all type(mobile internet or wifi internet)  -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--  Permission for access use mobile internet  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--  Permission for access use WIFI internet  -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--  Local storage  -->
+    <!--    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+
+</manifest>
