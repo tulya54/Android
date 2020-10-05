@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             try {
-                throw new IllegalArgumentException("VersionNames size dots not three");
+                throw new IllegalArgumentException("VersionNames size dots not two");
             } catch (Exception e) { e.printStackTrace(); }
         }
         Log.d("TAG", "versionCode: 0, result: empty");
