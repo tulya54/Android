@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
             }
         } else {
             try {
-                throw IllegalArgumentException("VersionNames size dots not three")
+                throw IllegalArgumentException("VersionNames size dots not two")
             } catch (e: Exception) { e.printStackTrace() }
         }
         Log.d("TAG", "versionCode: 0, result: empty")
