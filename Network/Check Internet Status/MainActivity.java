@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isInternetStatus(Context context) {
-  boolean result = false;
+        boolean result = false;
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (connectivityManager != null) {
