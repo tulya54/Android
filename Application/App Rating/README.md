@@ -8,3 +8,6 @@ https://developer.android.com/guide/playcore/in-app-review/kotlin-java#kotlin
 
 
 https://arunachalamkalimuthu.medium.com/implement-in-app-review-in-android-aed6067f7206
+
+
+https://www.warmodroid.xyz/tutorial/android/integrate-in-app-review-api-in-android/
