@@ -35,7 +35,11 @@ class MainActivity : AppCompatActivity() {
                 val reviewInfo = task.result
                 val flow =
                     reviewManager!!.launchReviewFlow(this, reviewInfo)
-                flow.addOnCompleteListener { task1: Task<Void?>? -> }
+                flow.addOnCompleteListener { task1: Task<Void?>? ->
+                    // The flow has finished. The API does not indicate whether the user
+                    // reviewed or not, or even whether the review dialog was shown. Thus, no
+                    // matter the result, we continue our app flow.
+                }
             } else {
                 // There was some problem, continue regardless of the result.
                 // show native rate app dialog on error
@@ -44,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-     private fun showRateAppFallbackDialog() {
+    private fun showRateAppFallbackDialog() {
         MaterialAlertDialogBuilder(this)
             .setTitle("Rate us")
             .setMessage("Liked us? Please rate us on play store")
@@ -55,4 +59,3 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 }
-
