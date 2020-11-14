@@ -44,17 +44,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showRateAppFallbackDialog() {
+     private fun showRateAppFallbackDialog() {
         MaterialAlertDialogBuilder(this)
             .setTitle("Rate us")
             .setMessage("Liked us? Please rate us on play store")
             .setPositiveButton("Okay") { dialog, which -> }
-            .setNegativeButton(
-                "Not now"
-            ) { dialog, which -> }
-            .setNeutralButton(
-                "Cancel"
-            ) { dialog, which -> }
+            .setNegativeButton("Not now") { dialog, which -> }
+            .setNeutralButton("Cancel") { dialog, which -> }
             .setOnDismissListener(DialogInterface.OnDismissListener { dialog: DialogInterface? -> })
             .show()
     }
