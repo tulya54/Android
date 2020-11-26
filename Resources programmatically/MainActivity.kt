@@ -16,12 +16,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
+        //  Get color for TextView
+        val textColor = ContextCompat.getColor(this, android.R.color.white)
+        //  Get color background for Views
+        val backgroundColorNoTheme = ResourcesCompat.getDrawable(resources, android.R.color.white, null)
+        //  Get color background for Views
+        val backgroundColorWithTheme = ResourcesCompat.getDrawable(resources, android.R.color.white, theme)
         //  A) drawables with theme attributes
-        ContextCompat.getDrawable(this, android.R.drawable.btn_star)
+        val drawable = ContextCompat.getDrawable(this, android.R.drawable.btn_star)
         //  B) drawables without theme attributes
-        ResourcesCompat.getDrawable(resources, android.R.drawable.btn_star, null)
+        val drawableNoTheme = ResourcesCompat.getDrawable(resources, android.R.drawable.btn_star, null)
         //  C) drawables with theme attributes from another theme
-        ResourcesCompat.getDrawable(resources, android.R.drawable.btn_star, theme)
+        val drawableWithTheme = ResourcesCompat.getDrawable(resources, android.R.drawable.btn_star, theme)
     }
 }
-
