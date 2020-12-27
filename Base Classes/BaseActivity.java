@@ -40,6 +40,8 @@ public class BaseActivity extends AppCompatActivity {
     private static final String ON_DESTROY = "onDestroy().";
     private static final String PREFS_LANGUAGE = "prefs_language";
     private static final String LANGUAGE = "language";
+    private static final String PREFS_TOKEN = "prefs_token";
+    private static final String TOKEN = "token";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -163,7 +165,7 @@ public class BaseActivity extends AppCompatActivity {
     public void showToast(@NonNull Object msg, boolean isToastLength) {
         onShowToast(msg, isToastLength);
     }
-    public void onShowToast(@NonNull Object msg, boolean isToastLength) {
+    private void onShowToast(@NonNull Object msg, boolean isToastLength) {
         try {
             int length = isToastLength ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT;
             if (msg instanceof String)
@@ -228,6 +230,21 @@ public class BaseActivity extends AppCompatActivity {
     public void clearPrefs(String prefs) {
         getSharedPreferences(prefs, Context.MODE_PRIVATE).edit().clear().apply();
     }
+    /*  TOKEN  */
+    public String getToken() {
+        SharedPreferences sharedPreferences = getSharedPreferences(PREFS_TOKEN, Context.MODE_PRIVATE);
+        String token = sharedPreferences.getString(TOKEN, null);
+        return token != null ? token : "";
+    }
+    public void setToken(String token) {
+        SharedPreferences sharedPreferences = getSharedPreferences(PREFS_TOKEN, Context.MODE_PRIVATE);
+        sharedPreferences.edit().putString(TOKEN, token).apply();
+    }
+    public void removeToken() {
+        SharedPreferences sharedPreferences = getSharedPreferences(PREFS_TOKEN, Context.MODE_PRIVATE);
+        sharedPreferences.edit().clear().apply();
+    }
+
     /*  KEYBOARD  */
     public void showKeyboard(Activity activity) {
         View view = activity.getCurrentFocus();
@@ -400,4 +417,3 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 }
-
