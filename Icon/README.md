@@ -1,4 +1,4 @@
-48 ? 48 (mdpi) 
+48 ? 48 (mdpi) <br />
 72 ? 72 (hdpi) 
 96 ? 96 (xhdpi) 
 144 ? 144 (xxhdpi) 
