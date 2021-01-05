@@ -177,16 +177,8 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
     /*  RESOURCES  */
-    @ColorInt
-    public int getRColor(int resources) {
-        return ContextCompat.getColor(this, resources);
-    }
-    @Nullable
-    public android.graphics.drawable.Drawable getRDrawable(int resources) {
-        return ContextCompat.getDrawable(this, resources);
-    }
     @NonNull
-    public String getRStr(@StringRes int str) {
+    public String getStr(@StringRes int str) {
         return getLanguageResources().getString(str);
     }
     @NonNull
