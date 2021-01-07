@@ -1,10 +1,8 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
