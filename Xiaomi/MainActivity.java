@@ -128,3 +128,115 @@ if (manufactXiaomi.equalsIgnoreCase(android.os.Build.MANUFACTURER)) {
         if (!session.getVisibilityOfAutoStartDialog()) {Intent intent = new Intent();
             intent.setComponent(new ComponentName("com.miui.securitycenter", "com.miui.permcenter.autostart.AutoStartManagementActivity"));
             startActivity(intent);}}
+
+
+
+
+private void ifHuaweiAlert() {
+    final SharedPreferences settings = getSharedPreferences("ProtectedApps", MODE_PRIVATE);
+    final String saveIfSkip = "skipProtectedAppsMessage";
+    boolean skipMessage = settings.getBoolean(saveIfSkip, false);
+    if (!skipMessage) {
+        final SharedPreferences.Editor editor = settings.edit();
+        Intent intent = new Intent();
+        intent.setClassName("com.huawei.systemmanager", "com.huawei.systemmanager.optimize.process.ProtectActivity");
+        if (isCallable(intent)) {
+            final AppCompatCheckBox dontShowAgain = new AppCompatCheckBox(this);
+            dontShowAgain.setText("Do not show again");
+            dontShowAgain.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    editor.putBoolean(saveIfSkip, isChecked);
+                    editor.apply();
+                }
+            });
+
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Huawei Protected Apps")
+                    .setMessage(String.format("%s requires to be enabled in 'Protected Apps' to function properly.%n", getString(R.string.app_name)))
+                    .setView(dontShowAgain)
+                    .setPositiveButton("Protected Apps", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            huaweiProtectedApps();
+                        }
+                    })
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show();
+        } else {
+            editor.putBoolean(saveIfSkip, true);
+            editor.apply();
+        }
+    }
+}
+
+private boolean isCallable(Intent intent) {
+    List<ResolveInfo> list = getPackageManager().queryIntentActivities(intent,
+            PackageManager.MATCH_DEFAULT_ONLY);
+    return list.size() > 0;
+}
+
+private void huaweiProtectedApps() {
+    try {
+        String cmd = "am start -n com.huawei.systemmanager/.optimize.process.ProtectActivity";
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            cmd += " --user " + getUserSerial();
+        }
+        Runtime.getRuntime().exec(cmd);
+    } catch (IOException ignored) {
+    }
+}
+
+private String getUserSerial() {
+    //noinspection ResourceType
+    Object userManager = getSystemService("user");
+    if (null == userManager) return "";
+
+    try {
+        Method myUserHandleMethod = android.os.Process.class.getMethod("myUserHandle", (Class<?>[]) null);
+        Object myUserHandle = myUserHandleMethod.invoke(android.os.Process.class, (Object[]) null);
+        Method getSerialNumberForUser = userManager.getClass().getMethod("getSerialNumberForUser", myUserHandle.getClass());
+        Long userSerial = (Long) getSerialNumberForUser.invoke(userManager, myUserHandle);
+        if (userSerial != null) {
+            return String.valueOf(userSerial);
+        } else {
+            return "";
+        }
+    } catch (NoSuchMethodException | IllegalArgumentException | InvocationTargetException | IllegalAccessException ignored) {
+    }
+    return "";
+}
+
+String manufacturer = "xiaomi";
+        if(manufacturer.equalsIgnoreCase(android.os.Build.MANUFACTURER)) {
+            //this will open auto start screen where user can enable permission for your app
+            Intent intent = new Intent();
+            intent.setComponent(new ComponentName("com.miui.securitycenter", "com.miui.permcenter.autostart.AutoStartManagementActivity"));
+            startActivity(intent);
+        }
+
+
+String xiaomi = "Xiaomi";
+final String CALC_PACKAGE_NAME = "com.miui.securitycenter";
+final String CALC_PACKAGE_ACITIVITY = "com.miui.permcenter.autostart.AutoStartManagementActivity";
+if (deviceManufacturer.equalsIgnoreCase(xiaomi)) {
+    DisplayUtils.showDialog(activity, "Ask for permission", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialogInterface, int i) {
+            try {
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName(CALC_PACKAGE_NAME, CALC_PACKAGE_ACITIVITY));
+                activity.startActivity(intent);
+            } catch (ActivityNotFoundException e) {
+                Logger.e(TAG, "Failed to launch AutoStart Screen ", e);
+            } catch (Exception e) {
+                Logger.e(TAG, "Failed to launch AutoStart Screen ", e);
+            }
+        }
+    }, new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialogInterface, int i) {
+
+        }
+    });
+}
