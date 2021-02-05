@@ -20,7 +20,7 @@ public abstract class BaseFragment extends Fragment {
     public static final String TAG = "BaseActivity";
     //  Your layout
     @LayoutRes
-    protected abstract int setContentView();
+    protected abstract int getLayoutResID();
     //  Initialize your views and start code
     protected abstract void initViews(View view);
 
