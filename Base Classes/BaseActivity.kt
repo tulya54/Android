@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat
 
 abstract class BaseActivity(@LayoutRes private val layoutResID: Int): AppCompatActivity() {
 
-    companion object{
+    companion object {
         const val TAG = "BaseActivity"
     }
     //  Initialize your views and start code
