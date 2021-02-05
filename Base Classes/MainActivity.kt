@@ -2,7 +2,7 @@ package com.example.myapplication
 
 class MainActivity : BaseActivity(R.layout.activity_main) {
 
-    companion object{
+    companion object {
         const val TAG = "MainActivity"
     }
     
