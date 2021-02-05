@@ -46,7 +46,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
         onBegin();
         //  Override Resources ID Layout
         setContentView(getLayoutResID());
-        //  Initialize all views inside this layout and access all widgets by ID
+        //  After UI create and initialize all views inside this layout and access all widgets by ID
         initViews();
     }
 
