@@ -40,6 +40,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        //  After UI create and initialize all views inside this layout and access all widgets by ID
         initViews(view);
     }
 
