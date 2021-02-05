@@ -72,7 +72,6 @@ public abstract class BaseFragment extends Fragment {
     //  This method called from outside, for example, activity, fragment manager...
     public void onNetworkChangeUI(boolean isInternet) {
         //  Change UI in fragment
-
     }
 
     //  Resources ID
