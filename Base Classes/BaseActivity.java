@@ -39,7 +39,9 @@ public abstract class BaseActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //  Override Resources ID Layouts
         setContentView(getContentView());
+        //  Initialize all views inside this layout and access all widgets by ID
         initViews();
     }
 
@@ -78,21 +80,32 @@ public abstract class BaseActivity extends AppCompatActivity  {
     //  Resources ID
     @NonNull
     public String getStr(@StringRes int id) {
+        /*
+         *  If your app supported more one language,
+         *  you make add your locale
+         *  example -> yourResources.getString(id);
+         */
         return getString(id);
     }
 
     @NonNull
     public String concatStr(String text) {
+        /*
+         * Concat all your text, strings and resources,
+         * to one String
+         */
         return text;
     }
 
     @Nullable
     public Drawable getImg(@DrawableRes int id) {
+        //  Short method name and override future deprecated methods
         return ContextCompat.getDrawable(this, id);
     }
 
     @ColorInt
     public int getClr(@ColorRes int id) {
+        //  Short method name and override future deprecated methods
         return ContextCompat.getColor(this, id);
     }
 }
