@@ -38,7 +38,8 @@ public abstract class BaseActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);     
+        super.onCreate(savedInstanceState);
+        //  Before UI create
         onBegin();
         //  Override Resources ID Layouts
         setContentView(getContentView());
@@ -74,7 +75,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
         onEnd();
     }
     
-     //  Method override, catch create fragment
+    //  Method override, catch create fragment
     protected void onBegin() {
 
     }
