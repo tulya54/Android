@@ -43,7 +43,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         //  Before UI create
         onBegin();
-        //  Override Resources ID Layouts
+        //  Override Resources ID Layout
         setContentView(getLayoutResID());
         //  Initialize all views inside this layout and access all widgets by ID
         initViews();
