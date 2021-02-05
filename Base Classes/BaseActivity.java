@@ -20,10 +20,10 @@ import androidx.core.content.ContextCompat;
 public abstract class BaseActivity extends AppCompatActivity  {
 
     public static final String TAG = "BaseActivity.";
-    //  @getContentView() Your layout
+    //  Your layout
     @LayoutRes
     protected abstract int getContentView();
-    //  @initViews() Initialize your views and start code
+    //  Initialize your views and start code
     protected abstract void initViews();
     //  Interceptor for catch internet status
     private final BroadcastReceiver internetReceiver = new BroadcastReceiver() {
