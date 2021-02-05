@@ -10,6 +10,7 @@ import android.os.Bundle;
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
+import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -20,6 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
 
     public static final String TAG = "BaseActivity.";
     //  @getContentView() Your layout
+    @LayoutRes
     protected abstract int getContentView();
     //  @initViews() Initialize your views and start code
     protected abstract void initViews();
