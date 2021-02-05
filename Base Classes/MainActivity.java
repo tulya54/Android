@@ -2,7 +2,7 @@ package com.example.myapplication;
 
 public class MainActivity extends BaseActivity {
 
-    public static final String TAG = "MainActivity";
+    private static final String TAG = "MainActivity";
 
     @Override
     protected int getLayoutResID() {
