@@ -18,10 +18,10 @@ import androidx.fragment.app.Fragment;
 public abstract class BaseFragment extends Fragment {
 
     public static final String TAG = "BaseActivity";
-    //  @setContentView() Your layout
+    //  Your layout
     @LayoutRes
     protected abstract int setContentView();
-    //  @initViews() Initialize your views and start code
+    //  Initialize your views and start code
     protected abstract void initViews(View view);
 
     @Override
