@@ -33,6 +33,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
             onNetworkChangeUI(!noConnect);
         }
     };
+    
     //  Method override for change UI if there is no internet
     public void onNetworkChangeUI(boolean isInternet) {
 
@@ -86,6 +87,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
     protected void onEnd() {
 
     }
+    
     //  Resources ID
     @NonNull
     public String getStr(@StringRes int id) {
