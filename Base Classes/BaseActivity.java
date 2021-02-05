@@ -22,7 +22,7 @@ public abstract class BaseActivity extends AppCompatActivity  {
     public static final String TAG = "BaseActivity.";
     //  Your layout
     @LayoutRes
-    protected abstract int getContentView();
+    protected abstract int getLayoutResID();
     //  Initialize your views and start code
     protected abstract void initViews();
     //  Interceptor for catch internet status
