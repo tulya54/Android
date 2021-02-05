@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
+import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -18,6 +19,7 @@ public abstract class BaseFragment extends Fragment {
 
     public static final String TAG = "BaseActivity";
     //  @setContentView() Your layout
+    @LayoutRes
     protected abstract int setContentView();
     //  @initViews() Initialize your views and start code
     protected abstract void initViews(View view);
