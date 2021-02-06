@@ -2,7 +2,7 @@ package com.example.myapplication;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
 
-public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
+public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     private static final String TAG = "MainActivity";
     private static final String TEXT = "Hello World!";
