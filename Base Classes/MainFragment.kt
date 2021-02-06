@@ -6,6 +6,7 @@ class MainFragment: BaseFragment(R.layout.fragment_main) {
 
     companion object{
         const val TAG = "MainFragment"
+        const val TEXT = "Hello World!"
     }
 
     override fun initViews(view: View) {
@@ -13,5 +14,6 @@ class MainFragment: BaseFragment(R.layout.fragment_main) {
          *  UI created
          *  your code
          */
+        binding?.tvText?.text = TEXT
     }
 }
