@@ -19,9 +19,9 @@ import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 
-public abstract class BaseBindingActivity<B extends ViewDataBinding> extends AppCompatActivity  {
+public abstract class BaseActivity<B extends ViewDataBinding> extends AppCompatActivity  {
 
-    public static final String TAG = "BaseBindingActivity";
+    public static final String TAG = "BaseActivity";
     //  Your view data binding
     public B binding;
     //  Your layout
