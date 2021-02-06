@@ -79,6 +79,9 @@ public abstract class BaseBindingActivity<B extends ViewDataBinding> extends App
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (binding != null) {
+            binding = null;
+        }
         onEnd();
     }
 
