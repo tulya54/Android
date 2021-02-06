@@ -52,6 +52,9 @@ public abstract class BaseBindingFragment<B extends ViewDataBinding> extends Fra
     @Override
     public void onDestroy() {
         super.onDestroy();
+        if (binding != null) {
+            binding = null;
+        }
         onEnd();
     }
 
