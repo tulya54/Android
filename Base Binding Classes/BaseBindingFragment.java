@@ -17,9 +17,9 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 
-public abstract class BaseBindingFragment<B extends ViewDataBinding> extends Fragment {
+public abstract class BaseFragment<B extends ViewDataBinding> extends Fragment {
 
-    public static final String TAG = "BaseBindingFragment";
+    public static final String TAG = "BaseFragment";
     //  Your view data binding
     public B binding;
     //  Your layout
@@ -73,8 +73,8 @@ public abstract class BaseBindingFragment<B extends ViewDataBinding> extends Fra
         getBaseActivity().onBackPressed();
     }
 
-    public BaseBindingActivity<?> getBaseActivity() {
-        return ((BaseBindingActivity<?>)getActivity());
+    public BaseActivity<?> getBaseActivity() {
+        return ((BaseActivity<?>)getActivity());
     }
 
     //  This method called from outside, for example, activity, fragment manager...
