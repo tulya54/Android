@@ -3,7 +3,7 @@ package com.example.myapplication;
 import android.view.View;
 import com.example.myapplication.databinding.FragmentMainBinding;
 
-public class MainFragment extends BaseBindingFragment<FragmentMainBinding> {
+public class MainFragment extends BaseFragment<FragmentMainBinding> {
 
     private static final String TAG = "MainFragment";
     private static final String TEXT = "Hello World!";
