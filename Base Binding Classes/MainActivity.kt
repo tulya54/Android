@@ -10,6 +10,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     }
 
     override fun initViews() {
+        /*
+         *  UI created
+         *  your code
+         */
         binding?.tvText?.text = TEXT
     }
 }
