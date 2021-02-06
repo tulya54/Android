@@ -19,7 +19,7 @@ import androidx.core.content.ContextCompat;
 
 public abstract class BaseActivity extends AppCompatActivity  {
 
-    public static final String TAG = "BaseActivity.";
+    public static final String TAG = "BaseActivity";
     //  Your layout
     @LayoutRes
     protected abstract int getLayoutResID();
