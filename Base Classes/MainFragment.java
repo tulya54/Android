@@ -5,6 +5,7 @@ import android.view.View;
 public class MainFragment extends BaseFragment {
 
     private static final String TAG = "MainFragment";
+    private static final String TEXT = "Hello World!";
 
     @Override
     protected int getLayoutResID() {
@@ -13,6 +14,10 @@ public class MainFragment extends BaseFragment {
 
     @Override
     protected void initViews(View view) {
-
+        /*
+         *  UI created
+         *  your code
+         */
+        binding.tvText.setText(TEXT);
     }
 }
