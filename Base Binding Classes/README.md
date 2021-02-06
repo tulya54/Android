@@ -6,7 +6,7 @@ android { <br/>
     dataBinding { <br/>
         enabled = true <br/>
         
-         // for view binding: <br/>
-    // viewBinding = true <br/>
+         // for view binding:
+    // viewBinding = true 
 
     } <br/>
