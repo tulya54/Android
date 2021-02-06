@@ -2,7 +2,7 @@ apply plugin `kotlin-kapt` // if youre using kotlin
 
 
 
-android {
-    dataBinding {
-        enabled = true
-    }
+android { <br/>
+    dataBinding { <br/>
+        enabled = true <br/>
+    } <br/>
