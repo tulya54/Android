@@ -4,6 +4,7 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
 
     companion object {
         const val TAG = "MainActivity"
+        const val TEXT = "Hello World!"
     }
     
     override fun initViews() {
@@ -11,5 +12,6 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
          *  UI created
          *  your code
          */
+        binding?.tvText?.text = TEXT
     }
 }
