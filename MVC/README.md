@@ -4,4 +4,4 @@ Model: This component stores the application data. It has no knowledge about the
 View: It is the UI(User Interface) layer that holds components that are visible on the screen. Moreover, it provides the visualization of the data stored in the Model and offers interaction to the user. <br/> <br/>
 Controller: This component establishes the relationship between the View and the Model. It contains the core application logic and gets informed of the user’s behavior and updates the Model as per the need. <br/> <br/>
 
-![ScreenShot]{https://github.com/tulya54/Android/upload/master/MVC}
+![ScreenShot](https://github.com/tulya54/Android/upload/master/MVC)
