@@ -19,7 +19,7 @@ import androidx.fragment.app.Fragment;
 
 public abstract class BaseFragment<B extends ViewDataBinding> extends Fragment {
 
-    public static final String TAG = "BaseFragment";
+    private static final String TAG = "BaseFragment";
     //  Your view data binding
     public B binding;
     //  Your layout
