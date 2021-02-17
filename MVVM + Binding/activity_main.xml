@@ -4,6 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="main"
+            type="com.example.myapplication.MainViewModel"/>
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,6 +21,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/btnClick"
             android:text="Button"
+            android:onClick="@{() -> main.onClickItem(2)}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
