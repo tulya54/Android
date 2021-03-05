@@ -1,0 +1,7 @@
+https://habr.com/ru/company/otus/blog/530024/ <br/>
+<br/>
+https://insert-koin.io/ <br/>
+<br/>
+https://medium.com/@harmittaa/setting-up-koin-2-0-1-for-android-ebf11de01816 <br/>
+<br/>
+https://medium.com/android-dev-hacks/koin-kotlin-native-dependency-injection-library-f1daddc1ef99 <br/>
