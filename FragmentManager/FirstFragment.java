@@ -4,6 +4,21 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 public class FirstFragment extends Fragment {
+    
+    public static FirstFragment newInstance(String text, int index) {
+        Bundle args = new Bundle();
+        args.putString("text", text);
+        args.putInt("index", index);
+        FirstFragment fragment = new FirstFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_first, container, false);
+    }
 
     public void onBegin() {
         Toast.makeText(getActivity(), "onBegin", Toast.LENGTH_SHORT).show();
