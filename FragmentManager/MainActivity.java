@@ -13,7 +13,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(new View(this));
-        //
+        //  Add fragment
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.frame, FirstFragment.newInstance("Hello", 1))
+                .commit();
+        //  Call method in fragment
         init();
     }
 
