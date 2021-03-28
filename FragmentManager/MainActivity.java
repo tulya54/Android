@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new View(this));
+        setContentView(R.layout.activity_main);
         //  Add fragment
         getSupportFragmentManager()
                 .beginTransaction()
