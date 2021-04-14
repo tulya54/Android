@@ -14,3 +14,5 @@ https://github.com/jenly1314/WanAndroid/blob/master/app/src/main/java/com/king/w
 https://medium.com/google-developer-experts/add-the-new-viewmodel-to-your-mvvm-36bfea86b159 <br/>
 <br/>
 <br/>
+
+https://nuancesprog.ru/p/6192/
