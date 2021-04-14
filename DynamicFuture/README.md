@@ -50,19 +50,50 @@ https://developer.android.com/guide/app-bundle/instant-delivery
 # Overview of Play Feature Delivery  |  Android 
 https://developer.android.com/guide/app-bundle/play-feature-delivery
 
+# SplitCompat  |  Android Developers
+https://developer.android.com/reference/com/google/android/play/core/splitcompat/SplitCompat
 
+# On Demand Modules  |  Android Developers
+https://developer.android.com/codelabs/on-demand-dynamic-delivery#4
 
+# Android Kotlin Fundamentals: Data binding with ViewModel and LiveData
+https://developer.android.com/codelabs/kotlin-android-training-live-data-data-binding#0
 
+# Data Binding in Android  |  Android Developers
+https://developer.android.com/codelabs/android-databinding#8
 
+# Android Dynamic Feature Modules : The Future
+https://medium.com/mindorks/dynamic-feature-modules-the-future-4bee124c0f1
 
+# On Demand Modules  |  Android Developers
+https://developer.android.com/codelabs/on-demand-dynamic-delivery#0
 
+# Overview of Play Feature Delivery  |  Android Developers
+https://developer.android.com/guide/app-bundle/play-feature-delivery
 
+# Exploring Dynamic Feature Modules at Swiggy
+https://bytes.swiggy.com/exploring-dynamic-feature-modules-at-swiggy-83019ebfa980
 
+# Dynamic feature module, Android OnDemand module : Android App Bundle
+https://proandroiddev.com/dynamic-feature-module-android-ondemand-module-android-app-bundle-ea0d872b32d
 
+# Everything They Don’t Tell You About Instant Apps #2
+https://medium.com/pulselive/everything-they-dont-tell-you-about-instant-apps-2-android-manifest-b0b57b78f4b8
 
+# Instant Dynamic Feature with Dynamic feature guide
+https://stackoverflow.com/questions/65164942/instant-dynamic-feature-with-dynamic-feature-guide
 
+# How to include instant dynamic feature module in instant app?
+https://stackoverflow.com/questions/62672943/how-to-include-instant-dynamic-feature-module-in-instant-app
 
+# Google Play Instant. Рефакторинг длиною в жизнь
+https://habr.com/ru/company/oleg-bunin/blog/462511/
 
+# Configure instant-delivery  |  Android Developers
+https://developer.android.com/guide/app-bundle/instant-delivery
+
+# App Bundles and Dynamic feature modules — A silver bullet for bloated Apks
+https://medium.com/android-news/app-bundles-and-dynamic-feature-modules-a-silver-bullet-for-bloated-apks-d0bcac151ae6
 
 
 
