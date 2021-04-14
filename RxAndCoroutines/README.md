@@ -27,3 +27,6 @@ https://stackoverflow.com/questions/56739284/posting-a-json-and-a-header-to-an-r
 
 # How to dynamically set headers in Retrofit (Android)
 https://stackoverflow.com/questions/29884967/how-to-dynamically-set-headers-in-retrofit-android
+
+# Опыт применения Coroutines и Retrofit2
+https://habr.com/ru/post/445242/
