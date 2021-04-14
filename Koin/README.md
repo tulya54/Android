@@ -8,3 +8,5 @@ https://medium.com/android-dev-hacks/koin-kotlin-native-dependency-injection-lib
 <br/>
 https://medium.com/@mountainappstudio/working-with-kotlin-module-viewmodel-mutablelivedata-viewdatabinding-any-many-more-for-kotlin-1f6f4e6fef3c
 <br/>
+
+https://github.com/InsertKoinIO/koin <br/>
