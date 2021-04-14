@@ -18,3 +18,12 @@ https://habr.com/ru/post/520544/
 
 # alexander klimov -> retrofit
 http://developer.alexanderklimov.ru/android/library/retrofit.php
+
+# Headers in Retrofit
+https://proandroiddev.com/headers-in-retrofit-a8d71ede2f3e
+
+# Posting a Json and a header to an REST api KOTLIN
+https://stackoverflow.com/questions/56739284/posting-a-json-and-a-header-to-an-rest-api-kotlin/56740317
+
+# How to dynamically set headers in Retrofit (Android)
+https://stackoverflow.com/questions/29884967/how-to-dynamically-set-headers-in-retrofit-android
