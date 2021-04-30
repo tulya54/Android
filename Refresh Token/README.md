@@ -1,1 +1,15 @@
-fdsfsdf
+https://howtodoinjava.com/retrofit2/connection-timeout-exception/ <br/>
+https://coderoad.ru/39219094/SocketTimeoutException-%D0%B2-Retrofit <br/>
+https://halcyonmobile.com/blog/mobile-app-development/android-app-development/yet-another-oauth-2-0-article-for-android-developers/ <br/>
+https://stackoverflow.com/questions/35516626/android-retrofit2-refresh-oauth-2-token/35630788#35630788 <br/>
+https://stackoverflow.com/questions/35516626/android-retrofit2-refresh-oauth-2-token <br/>
+https://stackoverflow.com/questions/37764670/android-retrofit-2-0-refresh-tokens <br/>
+https://stackoverflow.com/questions/22450036/refreshing-oauth-token-using-retrofit-without-modifying-all-calls <br/>
+https://stackoverflow.com/questions/58796014/how-to-refresh-token-using-okhttp-authenticator-with-multiple-request-at-a-time <br/>
+http://sangsoonam.github.io/2019/03/06/okhttp-how-to-refresh-access-token-efficiently.html <br/>
+https://developer.android.com/training/id-auth/authenticate <br/>
+https://stackoverflow.com/questions/63378032/how-to-refresh-the-jwt-token-before-calling-the-rest-api-in-android-retrofit <br/>
+https://stackoverflow.com/questions/31021725/android-okhttp-refresh-expired-token <br/>
+https://medium.com/android-news/how-we-do-automatic-token-refreshing-using-androids-new-work-manager-a0347f506117 <br/>
+https://www.simplifiedcoding.net/retrofit-authenticator-refresh-token/ <br/>
+https://www.woolha.com/tutorials/android-retrofit-2-refresh-access-token-with-okhttpclient-and-authenticator <br/>
